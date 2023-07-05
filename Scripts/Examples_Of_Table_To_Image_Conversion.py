@@ -22,7 +22,7 @@ data = data.iloc[:, id]
 norm_data = min_max_transform(data.values)
 norm_data = pd.DataFrame(norm_data, columns=data.columns, index=data.index)
 
-# Run the IGTD algorithm using (1) the Euclidean distance for calculating pairwise feature distances and pariwise pixel
+# Run the IGTD algorithm using (1) the Euclidean distance for calculating pairwise feature distances and pairwise pixel
 # distances and (2) the absolute function for evaluating the difference between the feature distance ranking matrix and
 # the pixel distance ranking matrix. Save the result in Test_1 folder.
 fea_dist_method = 'Euclidean'
